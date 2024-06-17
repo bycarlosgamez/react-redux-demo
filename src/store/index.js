@@ -9,7 +9,7 @@ import { formReducer, changeCost, changeName } from './slices/formSlice';
 
 const store = configureStore({
   reducer: {
-    guitar: guitarReducer,
+    guitars: guitarReducer,
     form: formReducer,
   },
 });

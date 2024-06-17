@@ -2,7 +2,7 @@ import { createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = {
   searchTerm: '',
-  guitars: [],
+  data: [],
 };
 
 const guitarSlice = createSlice({
@@ -13,18 +13,18 @@ const guitarSlice = createSlice({
       state.searchTerm = action.payload;
     },
     addGuitar(state, action) {
-      state.guitars.push({
+      state.data.push({
         name: action.payload.name,
         cost: action.payload.cost,
         id: nanoid(),
       });
     },
     removeGuitar(state, action) {
-      const updated = state.guitars.filter((guitar) => {
+      const updated = state.data.filter((guitar) => {
         return guitar.id !== action.payload;
       });
 
-      state.guitars = updated;
+      state.data = updated;
     },
   },
 });
