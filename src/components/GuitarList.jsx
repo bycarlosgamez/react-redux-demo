@@ -1,11 +1,15 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeGuitar } from '../store';
 
 function GuitarList() {
+  const dispatch = useDispatch();
   const guitars = useSelector((state) => {
     return state.guitars.data;
   });
 
-  const hanldeGuitarDelete = (guitar) => {};
+  const hanldeGuitarDelete = (guitar) => {
+    dispatch(removeGuitar(guitar.id));
+  };
 
   const renderedGuitars = guitars.map((guitar) => {
     return (
