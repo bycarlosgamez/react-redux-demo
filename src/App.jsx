@@ -5,12 +5,12 @@ import GuitarValue from './components/GuitarValue';
 
 function App() {
   return (
-    <>
+    <div className='container is-fluid'>
       <GuitarForm />
-      <GuitarList />
       <GuitarSearch />
+      <GuitarList />
       <GuitarValue />
-    </>
+    </div>
   );
 }
 
