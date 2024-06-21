@@ -1,37 +1,37 @@
-.car-form {
+.guitar-form {
   margin-top: 15px;
   padding: 15px;
 }
-.car-form .field-group {
+.guitar-form .field-group {
   display: flex;
   margin-bottom: 0px;
 }
-.car-form form {
+.guitar-form form {
   display: flex;
   justify-content: space-between;
 }
-.car-form .field {
+.guitar-form .field {
   display: flex;
   align-items: center;
   margin-bottom: 0px;
   margin-right: 10px;
 }
-.car-form .field label.label {
+.guitar-form .field label.label {
   margin-bottom: 0px;
   width: 70px;
 }
-.car-form input {
+.guitar-form input {
   width: 100%;
 }
-.car-form h4.subtitle.is-3 {
+.guitar-form h4.subtitle.is-3 {
   margin-bottom: 0.75rem;
 }
 
-.car-list .panel.bold {
+.guitar-list .panel.bold {
   font-weight: 600;
 }
 
-.car-list .panel {
+.guitar-list .panel {
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -39,17 +39,17 @@
   align-items: center;
 }
 
-.car-list p {
+.guitar-list p {
   font-size: 1.5rem;
 }
 
-.car-list .note {
+.guitar-list .note {
   font-style: italic;
   display: block;
   margin: 40px 20px;
 }
 
-.car-value {
+.guitar-value {
   font-size: 2rem;
   text-align: right;
 }

@@ -34,7 +34,7 @@ function GuitarForm() {
     <div className='guitar-form panel'>
       <h4 className='subtitle is-3'>Add Guitar</h4>
       <form onSubmit={handleSubmit}>
-        <div className='field-grupo'>
+        <div className='field-group'>
           <div className='field'>
             <label className='label'>Name</label>
             <input
