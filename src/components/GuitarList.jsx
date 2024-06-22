@@ -27,7 +27,7 @@ function GuitarList() {
     );
   });
   return (
-    <div className='card-list'>
+    <div className='guitar-list'>
       {renderedGuitars} <hr />
     </div>
   );
