@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { addGuitar } from './guitarsSlice';
 
 const initialState = {
   name: '',
@@ -15,6 +16,12 @@ const formSlice = createSlice({
     changeCost(state, action) {
       state.cost = action.payload;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(addGuitar, (state) => {
+      state.name = '';
+      state.cost = 0;
+    });
   },
 });
 
