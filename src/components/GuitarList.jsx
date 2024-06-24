@@ -3,8 +3,10 @@ import { removeGuitar } from '../store';
 
 function GuitarList() {
   const dispatch = useDispatch();
-  const guitars = useSelector((state) => {
-    return state.guitars.data;
+  const guitars = useSelector(({ guitars: { data, searchTerm } }) => {
+    return data.filter((guitar) => {
+      return guitar.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
   });
 
   const hanldeGuitarDelete = (guitar) => {
