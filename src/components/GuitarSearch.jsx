@@ -1,5 +1,5 @@
 function GuitarSearch() {
-  return <div>GuitarSearh</div>;
+  return <div>GuitarSearch</div>;
 }
 
 export default GuitarSearch;
